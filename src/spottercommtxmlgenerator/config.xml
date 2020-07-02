@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>spottercommtxmlgenerator</name>
+	<displayName><![CDATA[spotter.com.mt - XML generator]]></displayName>
+	<version><![CDATA[0.0.1]]></version>
+	<description><![CDATA[Automatically generates the needed XML to connect your shop to spotter.com.mt]]></description>
+	<author><![CDATA[spotter.com.mt]]></author>
+	<is_configurable>0</is_configurable>
+	<need_instance>1</need_instance>
+</module>

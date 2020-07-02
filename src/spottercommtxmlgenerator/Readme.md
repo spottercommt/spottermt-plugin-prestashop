@@ -1,0 +1,1 @@
+# spotter.com.mt - XML generator
