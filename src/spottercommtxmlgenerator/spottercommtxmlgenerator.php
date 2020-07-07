@@ -121,9 +121,9 @@ class Spottercommtxmlgenerator extends Module
 
 
         $xml = new XMLGenerator('<?xml version="1.0" encoding="utf-8"?><webstore/>');
-//        $now = date('Y-n-j G:i');
-//        $xml->addChild('created_at', "$now");
-//        $products = $xml->addChild('products');
+        $now = date('Y-m-d H:i:s');
+        $xml->addChild('created_at', "$now");
+        $products = $xml->addChild('products');
 
         $all_products = Product::getProducts($englishId, 0, 3000, 'id_product', 'ASC', false, true);
 ////        var_dump($all_products);
@@ -150,7 +150,7 @@ class Spottercommtxmlgenerator extends Module
 //            $realPrice = Product::getPriceStatic($id_product);
 
             if ($realPrice !== 0 && $available_for_order == 1) {
-                $product = $xml->addChild('product');
+                $product = $products->addChild('product');
                 $product->sku = null;
                 $product->sku->addCData($id_product);
                 $product->name = null;
